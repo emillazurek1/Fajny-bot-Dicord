@@ -9,7 +9,7 @@ module.exports = {
     async run(msg, args) {
       const { channel, guild, client } = msg
 
-      const channelName = `♥️${this.name}`
+      const channelName = `『👍』${this.name}`
   
       const createdChannel = await guild.channels.create(channelName, {
         type: "text",
@@ -32,7 +32,7 @@ module.exports = {
       .setDescription(nazwa3)
       .addField("wpisz tutaj swój pakiet z kanału #cennik", nazwa3, true)
 
-        channel.new.send()
+        channel.send()
         }
       }
     },
